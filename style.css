@@ -1,0 +1,309 @@
+body
+{
+    margin: 0px;
+    margin-top: 0px;
+}
+.hero {
+    /* Sizing */
+    height: 100vh;
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Text styles */
+    text-align: center;
+    color: rgb(122, 6, 6); /* ADD THIS LINE */
+
+    /* Background styles */
+    background-image: url('images/6.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-left: 5px;
+    margin-right: 40px;
+}
+
+.hero h1 {
+    /* Text styles */
+    font-size: 5em;
+
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Text styles */
+    color: white; /* CHANGE THIS LINE */
+    text-decoration: none;
+    font-size: 1.5em;
+
+    /* Border styles */
+    border: 3px solid white; /* CHANGE THIS LINE */
+    border-radius: 20px;
+}
+.parallax {
+    /* The image used */
+   background-image: url("images/7.jpg");
+
+   
+
+    /* Set a specific height */
+    min-height: 1000px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding-top: 20px;
+  font-size: 30px;
+  font-family: 'Open Sans',serif;
+  border: 3px solid white; /* CHANGE THIS LINE */
+  border-radius: 20px;
+}
+.column {
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 2px;
+}
+
+.column img {
+  margin-top: 3px;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 3px #70726F; /* CHANGE THIS LINE */
+  border-radius: 20px;
+}
+li{
+    display: inline;
+    padding-right: 10px;
+    font-size: 25px;
+    float: right;
+    color:black;
+    
+}
+a {
+	color: black; text-decoration: none;
+}
+ul li:hover {
+    text-decoration: none;
+    color: brown;
+    font-size: 30;
+}
+li a:hover {
+	color:brown; text-decoration: none;
+}
+nav {
+    position: fixed;
+    top: 0px;
+    background-color: rgb(6, 43, 122);
+    width: 100%;
+    height: 50px;
+}
+
+nav img{
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-right: 10px;
+    
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    display: inline-block;
+    width: 10%;
+}
+
+nav a:hover {
+    font-weight: bolder;
+}
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:black;
+    color: black;
+    text-align: center;
+    height: 80px;   
+}
+/* Style all font awesome icons */
+.fa {
+    margin-top: 15px;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  /*Google+*/
+  .fa-google {
+    background: #3B5998;
+    color: white;
+  }
+
+
+  .contact{
+    background-image: url('images/10.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+.contact footer {
+    position: relative;
+    left: 0;
+    bottom: stick;
+    top: 450px;
+    width: 100%;
+    background-color:black;
+    color: black;
+    height: 80px;
+}
+/* Style all font awesome icons */
+.contact.fa {
+    margin-top: 15px;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .contact.fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+/* Facebook */
+.contact .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .contact .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  /*Google+*/
+  .contact .fa-google {
+    background: #3B5998;
+    color: white;
+  } 
+  .contact .headeremail {
+      font-family: sans-serif;
+      font-size: 20px;
+      margin-top: 50px;
+      color: solid white;
+  }
+  .contact .headertext{
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 35px;
+    color: solid white;
+  }
+.contact li{
+    color:black;
+    margin-top: -50px;
+    font-size: 100%;
+    text-decoration: inline;
+    margin: 10px;
+    display: inline-block;
+    width: 10%;
+}
+ /*for responsive*/
+ @media all and (max-width: 500px) {
+    /*Mobile View*/
+    a
+    {
+        font-size: 10px;
+    }
+    section.section h2
+    {
+      font-size: 28px;
+    }
+    section.section p {
+      font-size: 20px;
+    }
+ 
+    section.section.parallax h1
+    {
+      font-size: 28px;
+      padding:0;
+      text-align: center;
+    }
+ 
+    .col2 h1
+    {
+      font-size: 28px;
+ 
+    }
+    .col2 p
+    {
+      font-size : 20px;
+    }
+  }
+  @media all and (min-width: 700px)
+  {
+    /*Desktop view and over*/
+    section.section h2 {
+      font-size: 32px;
+    }
+    section.section p {
+      font-size: 20px;
+    }
+    section.section.parallax h1 {
+      font-size: 80px;
+      padding:0;
+      text-align: center;
+    }
+  }
